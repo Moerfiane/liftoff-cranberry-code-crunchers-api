@@ -1,19 +1,27 @@
 package org.cranberrycodecrunchers.munchinacrunch.models;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Column;
+import javax.persistence.*;
+import java.util.List;
 
-public class User {
+@Entity
+@Table(name = "users")
+public class UserEntity {
+    private Object GenerationType;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-
-    @Column(nullable = false)
     private String username;
-
-    @Column(nullable = false)
     private String password;
+
+    @ManyToMany
+    @JoinTable(
+            name = "favorite_restaurants",
+            joinColumns = @JoinColumn(name = "users_id"),
+            inverseJoinColumns = @JoinColumn(name = "restaurants_id")
+    )
+
+    private List<FavoriteRestaurant> favoriteRestaurant;
 
     // Constructors, getters, setters
     public Long getId() {
