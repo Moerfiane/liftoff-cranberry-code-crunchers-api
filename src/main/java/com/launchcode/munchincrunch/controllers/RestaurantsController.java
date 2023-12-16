@@ -14,11 +14,9 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 @RestController
-
-public class RestaurantsControllers {
+public class RestaurantsController {
 
   private String API_KEY = "-3viEYwHOmenfpRiVWvs1PWXFxNVe77RQxnFUIAjyPbjePPmt2FmCapNDsEpkZr2j1I-UIPr8177APs5N64pg_9kgvuQP0-getDJPpoJaTO4mPkRjGf6-x38zLd3ZXYx";
   private String YELP_API_URL = "https://api.yelp.com/v3/businesses/search";
