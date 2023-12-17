@@ -18,8 +18,8 @@ import java.util.List;
 @RestController
 public class RestaurantsController {
 
-  private String API_KEY = "-3viEYwHOmenfpRiVWvs1PWXFxNVe77RQxnFUIAjyPbjePPmt2FmCapNDsEpkZr2j1I-UIPr8177APs5N64pg_9kgvuQP0-getDJPpoJaTO4mPkRjGf6-x38zLd3ZXYx";
-  private String YELP_API_URL = "https://api.yelp.com/v3/businesses/search";
+  private static final String  API_KEY = "-3viEYwHOmenfpRiVWvs1PWXFxNVe77RQxnFUIAjyPbjePPmt2FmCapNDsEpkZr2j1I-UIPr8177APs5N64pg_9kgvuQP0-getDJPpoJaTO4mPkRjGf6-x38zLd3ZXYx";
+  private static final  String YELP_API_URL = "https://api.yelp.com/v3/businesses/search";
   @GetMapping("/restaurants/{location}")
     public List<Restaurant> searchRestaurants(@PathVariable String location){
       RestTemplate restTemplate = new RestTemplate();
