@@ -1,23 +1,22 @@
-package org.cranberrycodecrunchers.munchinacrunch.models;
+package com.launchcode.munchincrunch.models;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "favorite_restaurants")
-public class FavoriteRestaurant {
-    @Id
+@Table(name = "favorite_restaurants") //maps to MySQL
+public class FavoriteRestaurantEntity {
+    @Id //primary key for fav rest. table
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-
     private String name;
-    private String location;
     private double rating;
+    private String address;
+    private String number;
 
-    // Constructors, getters, setters
+// Constructors, getters, setters
     public Long getId() {
         return id;
     }
@@ -34,19 +33,27 @@ public class FavoriteRestaurant {
         this.name = name;
     }
 
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
     public double getRating() {
         return rating;
     }
 
     public void setRating(double rating) {
         this.rating = rating;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 }

@@ -1,7 +1,7 @@
-package org.cranberrycodecrunchers.munchinacrunch.controllers;
+package com.launchcode.munchincrunch.controllers;
 
-import org.cranberrycodecrunchers.munchinacrunch.models.FavoriteRestaurant;
-import org.cranberrycodecrunchers.munchinacrunch.services.FavoriteRestaurantService;
+import com.launchcode.munchincrunch.FavoriteRestaurantService;
+import com.launchcode.munchincrunch.models.FavoriteRestaurantEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,14 +20,14 @@ public class FavoriteRestaurantController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<?> addFavoriteRestaurant(@RequestBody FavoriteRestaurant restaurant) {
+    public ResponseEntity<?> addFavoriteRestaurant(@RequestBody FavoriteRestaurantEntity restaurant) {
         favoriteRestaurantService.addFavoriteRestaurant(restaurant);
         return ResponseEntity.ok("Restaurant added to favorites.");
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<FavoriteRestaurant>> getFavoriteRestaurant() {
-        List<FavoriteRestaurant> favorites = favoriteRestaurantService.getFavoriteRestaurant();
+    public ResponseEntity<List<FavoriteRestaurantEntity>> getFavoriteRestaurant() {
+        List<FavoriteRestaurantEntity> favorites = favoriteRestaurantService.getFavoriteRestaurant();
         return ResponseEntity.ok(favorites);
     }
 
