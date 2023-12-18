@@ -4,13 +4,17 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Category extends AbstractEntity {
-        private String restaurant;
+        private String name;
+        public Category(String name) {
+                this.name = name;
+        }
+        public Category() {}
 
-        public Category() {};
-        public Category(restaurant) {
-                this.username = username;
-                this.pwHash = encoder.encode(password);
+        public String getName() {
+                return name;
         }
 
-
-    }
+        public void setName(String name) {
+                this.name = name;
+        }
+}
