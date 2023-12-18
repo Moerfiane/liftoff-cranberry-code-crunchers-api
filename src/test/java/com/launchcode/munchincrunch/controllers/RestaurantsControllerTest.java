@@ -10,21 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RestaurantsControllerTest {
     @Test
-    public void testSearchRestaurants(){
-        //input
+    public void testSearchRestaurants() {
         String location = "nyc";
-
-        // call
-     RestaurantsController restaurantsController = new RestaurantsController();
-    List<Restaurant> restaurants = restaurantsController.searchRestaurants(location);
-
-
-        //verification
-
-      assertFalse(restaurants.isEmpty());
-
-
-
+        RestaurantsController restaurantsController = new RestaurantsController();
+        List<Restaurant> restaurants = restaurantsController.searchRestaurants(location);
+        assertFalse(restaurants.isEmpty());
     }
 
 }
