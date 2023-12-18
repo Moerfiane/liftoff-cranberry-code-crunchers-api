@@ -38,6 +38,15 @@ public class FavoriteRestaurantEntity {
     }
 
     public void setRating(double rating) {
+        // Set rating only if it's greater than or equal to 4
+        if (rating >= 4) {
+            this.rating = rating;
+        } else {
+            throw new IllegalArgumentException("Rating must be 4 or higher.");
+        }
+    }
+
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
