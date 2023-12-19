@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-include "munchincrunch"
-include(":munchincrunch")
-
-=======
 rootProject.name = 'munchincrunch'
->>>>>>> b34146d5d5865e75ddab78b15ed901059c806075
+
