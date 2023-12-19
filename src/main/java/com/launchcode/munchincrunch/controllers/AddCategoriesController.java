@@ -1,8 +1,8 @@
-package org.launchcode.munchincrunch.controllers;
+package com.launchcode.munchincrunch.controllers;
 
+import com.launchcode.munchincrunch.data.CategoryRepository;
+import com.launchcode.munchincrunch.models.Category;
 import jakarta.validation.Valid;
-import org.launchcode.munchincrunch.data.CategoryRepository;
-import org.launchcode.munchincrunch.models.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,6 +1,6 @@
-package org.launchcode.munchincrunch.data;
+package com.launchcode.munchincrunch.data;
 
-import org.launchcode.munchincrunch.models.User;
+import com.launchcode.munchincrunch.models.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Integer> {

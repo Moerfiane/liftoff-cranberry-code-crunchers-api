@@ -1,6 +1,6 @@
-package org.launchcode.munchincrunch.data;
+package com.launchcode.munchincrunch.data;
 
-import org.launchcode.munchincrunch.models.Category;
+import com.launchcode.munchincrunch.models.Category;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CategoryRepository extends CrudRepository<Category, Integer> {
