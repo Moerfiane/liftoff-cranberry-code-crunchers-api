@@ -1,4 +1,4 @@
-package org.launchcode.munchincrunch.models.dto;
+package com.launchcode.munchincrunch.models.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

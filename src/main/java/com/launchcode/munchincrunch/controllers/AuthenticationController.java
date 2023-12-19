@@ -1,12 +1,12 @@
-package org.launchcode.munchincrunch.controllers;
+package com.launchcode.munchincrunch.controllers;
 
+import com.launchcode.munchincrunch.data.UserRepository;
+import com.launchcode.munchincrunch.models.User;
+import com.launchcode.munchincrunch.models.dto.LoginFormDTO;
+import com.launchcode.munchincrunch.models.dto.RegisterFormDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
-import org.launchcode.munchincrunch.data.UserRepository;
-import org.launchcode.munchincrunch.models.User;
-import org.launchcode.munchincrunch.models.dto.LoginFormDTO;
-import org.launchcode.munchincrunch.models.dto.RegisterFormDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

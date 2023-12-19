@@ -1,4 +1,4 @@
-package org.launchcode.munchincrunch.models;
+package com.launchcode.munchincrunch.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
