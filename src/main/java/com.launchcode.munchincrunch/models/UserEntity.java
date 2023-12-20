@@ -4,8 +4,6 @@ import java.util.List;
 
 @Table(name = "users") //maps to MySQL
 public class UserEntity {
-    private Object GenerationType;
-
     @Id //primary key for the users table
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Will use the identity column strategy
 
