@@ -38,7 +38,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="liftoff-cranberry-code-crunchers-api" type="f1a62948:ProjectNode" />
+                <item name="munchincrunch" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -81,7 +81,7 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2ZHE0BqkeRTR6bQYca8f9WqTgg7" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -266,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702346953224</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Re-updated">
+      <option name="closed" value="true" />
+      <created>1703056412920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703056412920</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
