@@ -1,3 +1,2 @@
 # liftoff-cranberry-code-crunchers-api
-
-12/21 Mac
+All are now contributors
