@@ -1,3 +1,3 @@
 # liftoff-cranberry-code-crunchers-api
 
-Mac is now a contributor git 
+12/21 Mac is a contributor
