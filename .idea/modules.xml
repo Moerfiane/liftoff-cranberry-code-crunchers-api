@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/munchinacrunch.iml" filepath="$PROJECT_DIR$/.idea/modules/munchinacrunch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/munchinacrunch.main.iml" filepath="$PROJECT_DIR$/.idea/modules/munchinacrunch.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/munchinacrunch.test.iml" filepath="$PROJECT_DIR$/.idea/modules/munchinacrunch.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/munchincrunch.iml" filepath="$PROJECT_DIR$/.idea/modules/munchincrunch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/munchincrunch.main.iml" filepath="$PROJECT_DIR$/.idea/modules/munchincrunch.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/munchincrunch.test.iml" filepath="$PROJECT_DIR$/.idea/modules/munchincrunch.test.iml" />
+    </modules>
+  </component>
+</project>
