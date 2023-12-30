@@ -27,6 +27,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.33'//need this for MySQL
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
     developmentOnly 'org.springframework.boot:spring-boot-devtools:3.0.4'
+    implementation 'org.springframework.security:spring-security-config:5.0.0.RELEASE' //need for spring security feature
 }
 
 test {
