@@ -1,26 +1,34 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '3.2.0'
-	id 'io.spring.dependency-management' version '1.1.4'
+    id("java")
+    id("org.springframework.boot") version "3.2.0"
+    id("io.spring.dependency-management") version "1.1.4"
 }
 
-group = 'com.launchcode'
-version = '0.0.1-SNAPSHOT'
+group = "org.example"
+version = "0.0.1-SNAPSHOT"
 
 java {
-	sourceCompatibility = '17'
+    sourceCompatibility = '17'
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.0.4'//need this for javax imports
+    implementation 'org.hibernate:hibernate-core:5.6.0.Final' //need this for javax imports
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:3.0.4'
+    implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.1.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.1.0'
+    testImplementation('org.junit.jupiter:junit-jupiter:5.9.2')
+    testImplementation("org.jmockit:jmockit:1.49")
+    implementation 'mysql:mysql-connector-java:8.0.33'//need this for MySQL
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools:3.0.4'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+test {
+    useJUnitPlatform()
 }
