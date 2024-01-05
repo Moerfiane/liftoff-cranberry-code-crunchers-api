@@ -1,4 +1,4 @@
-package com.launchcode.munchincrunch.models.dto;
+package org.launchcode.munchincrunch.Models.dto;
 
 public class RegisterFormDTO extends LoginFormDTO {
 

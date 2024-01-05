@@ -1,4 +1,4 @@
-package com.launchcode.munchincrunch.models;
+package org.launchcode.munchincrunch.Models;
 
 
 import jakarta.persistence.Entity;

@@ -1,9 +1,9 @@
-package com.launchcode.munchincrunch.controllers;
+package org.launchcode.munchincrunch.controllers;
 
-import com.launchcode.munchincrunch.data.UserRepository;
-import com.launchcode.munchincrunch.models.User;
-import com.launchcode.munchincrunch.models.dto.LoginFormDTO;
-import com.launchcode.munchincrunch.models.dto.RegisterFormDTO;
+import org.launchcode.munchincrunch.data.UserRepository;
+import org.launchcode.munchincrunch.Models.User;
+import org.launchcode.munchincrunch.Models.dto.LoginFormDTO;
+import org.launchcode.munchincrunch.Models.dto.RegisterFormDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
