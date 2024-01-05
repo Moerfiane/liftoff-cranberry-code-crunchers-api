@@ -1,9 +1,9 @@
 package com.launchcode.munchincrunch.models;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Table(name = "favorite_restaurants") //maps to MySQL
 public class FavoriteRestaurantEntity {

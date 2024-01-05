@@ -1,5 +1,5 @@
 package com.launchcode.munchincrunch.models;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Table(name = "users") //maps to MySQL
