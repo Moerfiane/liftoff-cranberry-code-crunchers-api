@@ -9,7 +9,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import javax.sql.DataSource;
 
 @Configuration // indicates class type
 @EnableWebSecurity // enables/configures web security in app
@@ -18,11 +19,17 @@ public class UserAuthentication extends WebSecurityConfigurerAdapter {
     @Autowired
     private CustomUserDetailsService customUserDetailsService;
 
-    /**
-     Bean method using BCryptPasswordEncoder from Spring Security to create a secure code for passwords.
-     This code, difficult to crack, is stored in the database for secure storage.
-     During login or password checks, the stored secret code is used to verify and ensure password safety.
-     */
+    @Bean //uses application.properties
+    public DataSource dataSource() {
+        return DataSourceBuilder
+                .create()
+                .driverClassName("com.mysql.cj.jdbc.Driver")
+                .url("jdbc:mysql://localhost:3306/munchinacrunch")
+                .username("cranberrycode")
+                .password("munchinacrunch")
+                .build();
+    }
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -30,7 +37,12 @@ public class UserAuthentication extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
+        auth
+                .userDetailsService(customUserDetailsService)
+                .passwordEncoder(passwordEncoder())
+                .and()
+                .jdbcAuthentication()
+                .dataSource(dataSource()); // Using the DataSource bean
     }
 
     @Override
